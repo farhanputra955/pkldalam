@@ -1,4 +1,4 @@
-@extends('layouts.nilai')
+@extends('layouts.admin')
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,7 +22,7 @@
 <body>
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-lg-8">
+            <div class="col-lg-12">
                 <div class="card">
                     <div class="card-body">
                          <center>
@@ -46,11 +46,12 @@
                                         <td>{{ $data->Nilai_Huruf }}</td>
                                         <td>{{ $data->Nilai_Angka }}</td>
                                         <td>
+                                           <td><center>
                                             <a href="{{ route('nilai.edit',$data->id) }}" 
                                             class="btn btn-info">Edit </a>
                                         </td>
                                         
-                                        <td>
+                                        <td><center>
                                             <form action="{{ route('nilai.destroy',$data->id) }}" method="post">
                                             {{csrf_field()}}
                                                 <input type="hidden" name="_method" value="DELETE">
@@ -58,9 +59,8 @@
                                                     Hapus 
                                                 </button>
                                             </form>
-                                        </td>
-                                    </tr>
-                                            
+                                        </td></center>
+                                    </tr></center>  
                                     @endforeach
                             </table>
                         </div>

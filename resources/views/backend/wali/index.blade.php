@@ -1,4 +1,4 @@
-@extends('layouts.wali')
+@extends('layouts.app')
 
 @section('content')
 <!DOCTYPE html>

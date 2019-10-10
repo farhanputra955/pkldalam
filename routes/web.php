@@ -24,6 +24,7 @@ Route::get('/home', 'HomeController@index')->name('home');
   Route::resource ('kopetensi','KopetensiKeahlianController');
   Route::resource ('wali','WaliController');
    Route::resource ('murid','MuridController');
+   Route::resource ('anak','AnakController');
   Route::resource ('ortu','OrtuController');
   Route::resource ('standar','StandarKopetensiController');
   Route::resource ('bidang','BidangController');

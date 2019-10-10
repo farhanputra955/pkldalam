@@ -1,4 +1,4 @@
-@extends('layouts.kopetensi')
+@extends('layouts.admin')
 
 @section('content')
 <!DOCTYPE html>
@@ -15,7 +15,7 @@
 <body>
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-lg-8">
+            <div class="col-lg-12">
                 <div class="card">
                     <div class="card-body">
                         <center>
@@ -42,10 +42,12 @@
                                         <td>{{ $data->Bidang_Kode }}</td>
                                         <td>{{ $data->Kopetensi_Nama }}</td>
                                         <td>
+                                           <td><center>
                                             <a href="{{ route('kopetensi.edit',$data->id) }}" 
                                             class="btn btn-info">Edit </a>
                                         </td>
-                                        <td>
+                                        
+                                        <td><center>
                                             <form action="{{ route('kopetensi.destroy',$data->id) }}" method="post">
                                             {{csrf_field()}}
                                                 <input type="hidden" name="_method" value="DELETE">
@@ -53,8 +55,8 @@
                                                     Hapus 
                                                 </button>
                                             </form>
-                                        </td>
-                                    </tr>
+                                        </td></center>
+                                    </tr></center>
                                             
                                     @endforeach
                             </table>
