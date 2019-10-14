@@ -127,7 +127,10 @@
 	<link rel="stylesheet" type="text/css" href="{{asset('assets/login/vendor/daterangepicker/daterangepicker.css')}}">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="{{asset('assets/login/css/util.css')}}">
-	<link rel="stylesheet" type="text/css" href="{{asset('assets/login/css/main.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{asset('assets/login/css/main.css')}}">
+  <link rel="stylesheet" href="{{asset('DataTables/dt/css/dataTables.bootstrap4.min.css')}}">
+  <link rel="stylesheet" href="{{asset('DataTables/datatables.min.css')}}">
+        
 <!--===============================================================================================-->
 </head>>Login Screens:</h6>
           <a class="dropdown-item" href="login.html">Login</a>
@@ -794,6 +797,9 @@
   <!-- Demo scripts for this page-->
   <script src="js/demo/datatables-demo.js"></script>
   <script src="js/demo/chart-area-demo.js"></script>
+   <script src="{{asset('DataTables/dt/js/jquery.dataTables.min.js')}}"></script>
+        <script src="{{asset('DataTables/datatables.min.js')}}"></script>
+        
 
 </body>
 

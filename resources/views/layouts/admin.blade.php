@@ -30,22 +30,13 @@
           <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
             <span class="mdi mdi-menu"></span>
           </button>
-          <div class="search-field d-none d-md-block">
-            <form class="d-flex align-items-center h-100" action="#">
-              <div class="input-group">
-                <div class="input-group-prepend bg-transparent">
-                  <i class="input-group-text border-0 mdi mdi-magnify"></i>
-                </div>
-                <input type="text" class="form-control bg-transparent border-0" placeholder="Search projects">
-              </div>
-            </form>
-          </div>
+        
           <ul class="navbar-nav navbar-nav-right">
             <li class="nav-item nav-profile dropdown">
                 
                   <li><a href=""{{ route('logout')}}"" class="fa fa-lock author-log-ic"
                 onclick="event.preventDefault();
-                document.getElementById('logout-form').submit();">Log Out</a>
+                document.getElementById('logout-form').submit();">Logout</a>
               <form id="logout-form" action="{{ route('logout')}}" method="POST" style="display: nome;">
               @csrf
             </form>
@@ -63,12 +54,14 @@
         <nav class="sidebar sidebar-offcanvas" id="sidebar">
           <ul class="nav">
             <li class="nav-item nav-profile">
+              
               <a href="#" class="nav-link">
                 <div class="nav-profile-image">
                   <img src="{{asset('assets/oop/images/faces/face1.jpg')}}" alt="profile">
                   <span class="login-status online"></span>
                   <!--change to offline or busy as needed-->
                 </div>
+                
                 <div class="nav-profile-text d-flex flex-column">
                   <span class="font-weight-bold mb-2">Admin</span>
                   <span class="text-secondary text-small">admin@gmail.com</span>
@@ -157,19 +150,25 @@
     </div>
     <!-- container-scroller -->
     <!-- plugins:js -->
-    <script src="assets/vendors/js/vendor.bundle.base.js"></script>
+    <script src="{{asset('assets/oop/vendors/js/vendor.bundle.base.js')}}"></script>
     <!-- endinject -->
     <!-- Plugin js for this page -->
-    <script src="assets/vendors/chart.js/Chart.min.js"></script>
+    <script src="{{asset('assets/oop/vendors/chart.js/Chart.min.js')}}"></script>
     <!-- End plugin js for this page -->
     <!-- inject:js -->
-    <script src="assets/js/off-canvas.js"></script>
-    <script src="assets/js/hoverable-collapse.js"></script>
-    <script src="assets/js/misc.js"></script>
+    <script src="{{asset('assets/oop/js/off-canvas.js')}}"></script>
+    <script src="{{asset('assets/oop/js/hoverable-collapse.js')}}"></script>
+    <script src="{{asset('assets/oop/js/misc.js')}}"></script>
     <!-- endinject -->
     <!-- Custom js for this page -->
-    <script src="assets/js/dashboard.js"></script>
-    <script src="assets/js/todolist.js"></script>
+    <script src="{{asset('assets/oop/js/dashboard.js')}}"></script>
+    <script src="{{asset('assets/oop/js/todolist.js')}}"></script>
+    
     <!-- End custom js for this page -->
   </body>
-</html>
+</html><script>
+      $(document)<script>
+      $(document).ready(function() {
+    $('#datatable').DataTable();
+} );
+ 

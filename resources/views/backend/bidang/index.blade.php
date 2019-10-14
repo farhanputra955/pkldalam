@@ -1,4 +1,4 @@
-@extends('layouts.admin')
+@extends('layouts.contoh')
 
 @section('content')
 <!DOCTYPE html>
@@ -26,7 +26,7 @@
                          
                         <br>
                         <div class="table-responsive">
-                            <table id="dt-select" class="table table-striped table-bordered" cellspacing="0" width="100%">
+                            <table id="datatable" class="table table-striped table-bordered" cellspacing="0" width="100%">
                                 <thead class="thead-dark">
                                    
                                      <th class="th-sm">No

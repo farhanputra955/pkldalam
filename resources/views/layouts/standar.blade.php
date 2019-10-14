@@ -19,6 +19,8 @@
 
   <!-- Custom styles for this template-->
   <link href="{{asset('assets/kuy/css/sb-admin.css')}}" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.20/datatables.min.css"/>
+
 
 </head>
 
@@ -206,6 +208,7 @@
   </div>
 
   <!-- Bootstrap core JavaScript-->
+
   <script src="{{asset('assets/kuy/vendor/jquery/jquery.min.js')}}"></script>
   <script src="{{asset('assets/kuy/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 
@@ -223,6 +226,12 @@
   <!-- Demo scripts for this page-->
   <script src="{{asset('assets/kuy/js/demo/datatables-demo.js')}}"></script>
   <script src="{{asset('assets/kuy/js/demo/chart-area-demo.js')}}"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.20/datatables.min.js"></script>
+  <script>
+  $(document).ready(function() {
+    $('datatable').DataTable();
+} );
+  </script>
 
 </body>
 
